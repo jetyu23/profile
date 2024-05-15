@@ -1,0 +1,142 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/Bebas.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-image: url('space.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas', Arial, sans-serif;
+    color: #ffcc00;
+    margin: 20px 0;
+    padding: 20px
+}
+
+h1 {
+    font-size: 80px;
+    width: 75%; /* Take up 75% of the horizontal space */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000;
+    margin: 0 auto; /* Center the heading */
+}
+
+h3 {
+    font-size: 36px;
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.Info, .Facts, .Interests, .Projects, .socials {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px; /* Increase margin to add more vertical space */
+    padding: 20px;
+    width: 200px; /* Initial small size */
+    height: 200px; /* Initial small size */
+    position: relative;
+    transition: width 1s, height 1s; /* Smooth transition */
+}
+
+.Info.active, .Facts.active, .Interests.active, .Projects.active, .socials.active {
+    width: 725px; /* Enlarged size */
+    height: 725px; /* Enlarged size */
+}
+
+.Info .content, .Facts .content, .Interests .content, .Projects .content, .socials .content {
+    display: none; /* Hide content initially */
+}
+
+.Info.active .content, .Facts.active .content, .Interests.active .content, .Projects.active .content, .socials.active .content {
+    display: block; /* Show content when active */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin: 5px 0;
+}
+
+li strong {
+    font-weight: bolder;
+    color: #ffcc00; /* Yellow color for labels */
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.socials a {
+    margin: 0 10px;
+}
+
+.socials img {
+    width: 40px; /* Increase size of social logos */
+    height: 40px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dotted-line {
+    border-left: 2px dotted #ffcc00;
+    position: absolute;
+    top: 0; /* Start at the top */
+    bottom: 0; /* End at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading {
+    font-size: 32px; /* Make these headings smaller than h3 */
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
