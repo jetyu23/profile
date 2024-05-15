@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 @font-face {
     font-family: 'Helvetica';
@@ -25,26 +25,27 @@ body {
     align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas', Arial, sans-serif;
-    color: #ffcc00;
-    margin: 20px 0;
-    padding: 20px
+header {
+    text-align: center;
+    width: 100%;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     width: 75%; /* Take up 75% of the horizontal space */
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000;
+    text-shadow: 4px 4px 0 #000, -4px -4px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000;
     margin: 0 auto; /* Center the heading */
+    color: #ffcc00;
 }
 
-h3 {
+h3, .star-wars-heading {
     font-size: 36px;
     color: #ffcc00;
-    border-bottom: 2px solid #ffcc00;
+    text-shadow: 2px 2px 5px #000, 0 0 10px #000; /* More Star Wars-like text-shadow */
     display: inline-block;
     padding-bottom: 5px;
+    border-bottom: 2px solid #ffcc00; /* Add underline */
+    margin-bottom: 20px; /* Add margin below the heading */
 }
 
 .Info, .Facts, .Interests, .Projects, .socials {
@@ -80,20 +81,23 @@ ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
+    font-size: 24px; /* Increase font size for readability */
+    line-height: 1.6; /* Increase line height for readability */
 }
 
 li {
-    margin: 5px 0;
+    margin: 10px 0; /* Increase margin for better readability */
 }
 
 li strong {
-    font-weight: bolder;
+    font-weight: 900; /* Make the text bolder */
     color: #ffcc00; /* Yellow color for labels */
 }
 
 p {
-    margin: 10px 0;
+    margin: 20px 0; /* Increase margin for better readability */
     text-align: center;
+    font-size: 24px; /* Increase text size for readability */
 }
 
 a {
@@ -110,8 +114,8 @@ a:hover {
 }
 
 .socials img {
-    width: 40px; /* Increase size of social logos */
-    height: 40px;
+    width: 50px; /* Increase size of social logos */
+    height: 50px;
 }
 
 img {
@@ -139,4 +143,3 @@ img {
     color: #ffcc00;
     margin-top: 20px;
 }
-
