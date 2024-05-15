@@ -15,7 +15,6 @@
     src: url('fonts/Helvetica-bold.ttf') format('truetype');
 }
 
-
 body {
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('space.jpeg');
@@ -38,52 +37,50 @@ header {
 
 h1 {
     font-family: 'Bebas', Arial, sans-serif;
-    font-size: 78px;
+    font-size: 70px; /* Scale up by 10% from 52.5px */
     width: 75%; /* Take up 75% of the horizontal space */
-    text-shadow: 4px 4px 0 #ffcc00, -4px -4px 0 #ffcc00, 2px -2px 0 #ffcc00, -2px 2px 0 #ffcc00, 4px 4px 0 #ffcc00, -4px -4px 0 #ffcc00, 4px -4px 0 #ffcc00, -4px 4px 0 #ffcc00;
+    text-shadow: 3.3px 3.3px 0 #ffcc00, -3.3px -3.3px 0 #ffcc00, 1.65px -1.65px 0 #ffcc00, -1.65px 1.65px 0 #ffcc00, 3.3px 3.3px 0 #ffcc00, -3.3px -3.3px 0 #ffcc00, 3.3px -3.3px 0 #ffcc00, -3.3px 3.3px 0 #ffcc00;
     margin: 0 auto; /* Center the heading */
     color: #000; /* Black text color */
-    padding: 20px;
+    padding: 20px; /* Scale up by 10% from 15px */
 }
-
-
 
 h3 {
     font-family: 'Bebas', Arial, sans-serif;
-    font-size: 48px; /* Increase size to make it noticeably larger */
+    font-size: 39.6px; /* Scale up by 10% from 36px */
     color: #ffcc00;
     display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ffcc00; /* Add underline */
-    margin-bottom: 20px; /* Add margin below the heading */
+    padding-bottom: 4.125px; /* Scale up by 10% from 3.75px */
+    border-bottom: 1.65px solid #ffcc00; /* Scale up by 10% from 1.5px */
+    margin-bottom: 16.5px; /* Scale up by 10% from 15px */
 }
 
 .subheading {
     font-family: 'Bebas', Arial, sans-serif;
-    font-size: 32px; /* Make these headings smaller than h3 */
+    font-size: 26.4px; /* Scale up by 10% from 24px */
     color: #ffcc00;
-    margin-top: 20px;
+    margin-top: 16.5px; /* Scale up by 10% from 15px */
 }
 
 .Info, .Facts, .Interests, .Projects, .socials {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 8.25px rgba(255, 255, 255, 0.3); /* Scale up by 10% from 7.5px */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px; /* Increase margin to add more vertical space */
-    padding: 20px;
-    width: 200px; /* Initial small size */
-    height: 200px; /* Initial small size */
+    margin: 82.5px; /* Scale up by 10% from 75px */
+    padding: 16.5px; /* Scale up by 10% from 15px */
+    width: 165px; /* Scale up by 10% from 150px */
+    height: 165px; /* Scale up by 10% from 150px */
     position: relative;
-    transition: width 1s, height 1s; /* Smooth transition */
+    transition: width 1.7s, height 1.7s; /* Smooth transition */
 }
 
 .Info.active, .Facts.active, .Interests.active, .Projects.active, .socials.active {
-    width: 720px; /* Enlarged size */
-    height: 720px; /* Enlarged size */
+    width: 594px; /* Scale up by 10% from 540px */
+    height: 594px; /* Scale up by 10% from 540px */
 }
 
 .Info .content, .Facts .content, .Interests .content, .Projects .content, .socials .content {
@@ -99,12 +96,18 @@ ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
-    font-size: 24px; /* Increase font size for readability */
+    font-size: 19.8px; /* Scale up by 10% from 18px */
     line-height: 1.6; /* Increase line height for readability */
 }
 
 li {
-    margin: 10px 0; /* Increase margin for better readability */
+    margin: 8.25px 0; /* Scale up by 10% from 7.5px */
+}
+
+li .label {
+    font-family: 'HelveticaBold', Arial, sans-serif;
+    font-weight: 900; /* Make the text bolder */
+    color: #ffcc00; /* Yellow color for labels */
 }
 
 li strong {
@@ -113,9 +116,9 @@ li strong {
 }
 
 p {
-    margin: 20px 0; /* Increase margin for better readability */
+    margin: 16.5px 0; /* Scale up by 10% from 15px */
     text-align: center;
-    font-size: 24px; /* Increase text size for readability */
+    font-size: 19.8px; /* Scale up by 10% from 18px */
 }
 
 a {
@@ -128,12 +131,12 @@ a:hover {
 }
 
 .socials a {
-    margin: 0 10px;
+    margin: 0 8.25px; /* Scale up by 10% from 7.5px */
 }
 
 .socials img {
-    width: 50px; /* Increase size of social logos */
-    height: 50px;
+    width: 41.25px; /* Scale up by 10% from 37.5px */
+    height: 41.25px; /* Scale up by 10% from 37.5px */
 }
 
 img {
@@ -148,15 +151,10 @@ img {
 }
 
 .dotted-line {
-    border-left: 2px dotted #ffcc00;
+    border-left: 1.65px dotted #ffcc00; /* Scale up by 10% from 1.5px */
     position: absolute;
     top: 0; /* Start at the top */
     bottom: 0; /* End at the bottom */
     left: 50%;
     transform: translateX(-50%);
-}
-li .label {
-    font-family: 'HelveticaBold', Arial, sans-serif;
-    font-weight: 900; /* Make the text bolder */
-    color: #ffcc00; /* Yellow color for labels */
 }
