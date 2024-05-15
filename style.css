@@ -10,6 +10,12 @@
     src: url('fonts/Bebas.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('fonts/Helvetica-bold.ttf') format('truetype');
+}
+
+
 body {
     font-family: 'Helvetica', Arial, sans-serif;
     background-image: url('space.jpeg');
@@ -31,21 +37,32 @@ header {
 }
 
 h1 {
-    font-size: 70px;
+    font-family: 'Bebas', Arial, sans-serif;
+    font-size: 78px;
     width: 75%; /* Take up 75% of the horizontal space */
-    text-shadow: 4px 4px 0 #000, -4px -4px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000;
+    text-shadow: 4px 4px 0 #ffcc00, -4px -4px 0 #ffcc00, 2px -2px 0 #ffcc00, -2px 2px 0 #ffcc00, 4px 4px 0 #ffcc00, -4px -4px 0 #ffcc00, 4px -4px 0 #ffcc00, -4px 4px 0 #ffcc00;
     margin: 0 auto; /* Center the heading */
-    color: #ffcc00;
+    color: #000; /* Black text color */
+    padding: 20px;
 }
 
-h3, .star-wars-heading {
-    font-size: 36px;
+
+
+h3 {
+    font-family: 'Bebas', Arial, sans-serif;
+    font-size: 48px; /* Increase size to make it noticeably larger */
     color: #ffcc00;
-    text-shadow: 2px 2px 5px #000, 0 0 10px #000; /* More Star Wars-like text-shadow */
     display: inline-block;
     padding-bottom: 5px;
     border-bottom: 2px solid #ffcc00; /* Add underline */
     margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.subheading {
+    font-family: 'Bebas', Arial, sans-serif;
+    font-size: 32px; /* Make these headings smaller than h3 */
+    color: #ffcc00;
+    margin-top: 20px;
 }
 
 .Info, .Facts, .Interests, .Projects, .socials {
@@ -65,12 +82,13 @@ h3, .star-wars-heading {
 }
 
 .Info.active, .Facts.active, .Interests.active, .Projects.active, .socials.active {
-    width: 725px; /* Enlarged size */
-    height: 725px; /* Enlarged size */
+    width: 720px; /* Enlarged size */
+    height: 720px; /* Enlarged size */
 }
 
 .Info .content, .Facts .content, .Interests .content, .Projects .content, .socials .content {
     display: none; /* Hide content initially */
+    max-width: 95%; /* Ensure text does not overflow */
 }
 
 .Info.active .content, .Facts.active .content, .Interests.active .content, .Projects.active .content, .socials.active .content {
@@ -137,9 +155,8 @@ img {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.heading {
-    font-size: 32px; /* Make these headings smaller than h3 */
-    color: #ffcc00;
-    margin-top: 20px;
+li .label {
+    font-family: 'HelveticaBold', Arial, sans-serif;
+    font-weight: 900; /* Make the text bolder */
+    color: #ffcc00; /* Yellow color for labels */
 }
